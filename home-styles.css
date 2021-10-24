@@ -1,0 +1,282 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+.sticky-header{
+  display: grid;
+  width: 100%;
+  height: 41px;
+  margin: 0 auto;
+  grid-template-columns: 2fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: #E5E7E9;
+  border-bottom: 2px dashed gray;
+  position: fixed;
+  top: 0;
+}
+
+.web-link{
+  font-size: 14px;
+  text-decoration: none;
+  color: #4E6779;
+}
+
+.web-link:hover{
+  color: black;
+}
+
+.download{
+  justify-self: end;
+  margin-right: 10px;
+}
+
+.download-link{
+  text-decoration: none;
+  color: #9A9A9A;
+}
+
+.download-link:hover{
+  color: #325A76;
+}
+
+.discuss{
+  justify-self: start;
+  margin-left: 10px;
+}
+
+.discuss-link{
+  text-decoration: none;
+  color: #9A9A9A;
+}
+
+.discuss-link:hover{
+  color: #325A76;
+}
+
+.nav-bar{
+  width: 100%;
+  height:  fit-content;
+}
+
+#logo{
+  display: block;
+  margin: 0 auto;
+  margin-top: 90px;
+  width: 340px;
+  height: 93px;
+}
+
+.navigation{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: bold ;
+}
+
+.home{
+  color: #0BA39C;
+}
+
+.featured{ 
+  width: 100%;
+  height: 100%;
+  background-image: url(https://freewebsitetemplates.com/preview/mustacheenthusiast/images/the-beacon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.hero-info{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30%;
+  margin-top: 15px;
+}
+
+.hero-title{
+  grid-area: col2; 
+  height: fit-content;
+  width: fit-content;
+  padding: 23px 27px 20px;
+  margin: 0 0 18px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: 'Poller One', cursive;
+}
+
+.hero-l1{
+  grid-area: col2-r2;
+  height: fit-content;
+  width: fit-content;
+  padding: 12px 27px;
+  margin: 7px 0;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+} 
+
+.hero-l2{
+  grid-area: col2-r3;
+  height: fit-content;
+  width: fit-content;
+  padding: 12px 27px;
+  margin: 7px 0;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+} 
+
+.hero-l3{
+  grid-area: col2-r4;
+  height: fit-content;
+  width: fit-content;
+  padding: 12px 27px;
+  margin: 7px 0;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+} 
+
+.hero-rm{
+  grid-area: col2-r5;
+  height: fit-content;
+  width: fit-content;
+  padding: 26px 27px 22px;
+  margin-top: 15px 0 0;
+  margin-bottom: 15px;
+  background-color: #0ba39c;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.lower-content{
+  width: fit-content;
+  height: auto;
+  padding-top: 32px;
+  margin: auto;
+  display: flex;
+  column-gap: 20px;
+}
+
+.pic1{
+  width: auto;
+  height: 100%;
+  position: relative;
+
+}
+
+.pic2{
+  width: auto;
+  height: auto;
+  text-align: center;
+  position: relative;
+}
+
+.pic3{
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.pic1::after{
+  content: "";
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .5);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.pic1:hover:after{
+  opacity: .5;
+}
+
+.pic2::after{
+  content: "";
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .5);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.pic2:hover:after{
+  opacity: .5;
+}
+
+.pic3::after{
+  content: "";
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .5);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.pic3:hover:after{
+  opacity: .5;
+}
+
+.pic-title{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+  column-gap: 220px;
+  font-weight: 1000;
+}
+
+.footer{
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 122px;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
