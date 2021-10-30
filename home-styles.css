@@ -28,8 +28,7 @@ img {
 .sticky-header{
   display: grid;
   width: 100%;
-  height: 41px;
-  margin: 0 auto;
+  height: auto;
   grid-template-columns: 2fr 1fr 1fr;
   justify-items: center;
   align-items: center;
@@ -41,7 +40,7 @@ img {
 }
 
 .web-link{
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
   color: #4E6779;
 }
@@ -93,7 +92,7 @@ img {
 }
 
 .nav-bar{
-  width: 100%;
+  width: 100vw;
   height:  fit-content;
 }
 
@@ -114,11 +113,15 @@ img {
   font-weight: bold ;
 }
 
-.home{
+.page-links:hover{
   color: #0BA39C;
 }
 
-.featured{ 
+#home{
+  color: #0BA39C;
+}
+
+.featured{  
   width: 100vw;
   height: 100%;
   margin: 0 auto;
@@ -127,10 +130,9 @@ img {
 }
 
 .hero-img{
-  width: 100vw;
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
-  /* object-fit: fill; */
+  margin: 0;
 }
 
 .hero-info{
@@ -139,7 +141,7 @@ img {
   left: 50%;
   height: 334px;
   width: fit-content;
-  display: inline-block;
+
 }
 
 #hero-title{
@@ -286,8 +288,6 @@ img {
   width: 44px;
 }
 
-
-
 @media only screen and (max-width: 1080px) {
   .hero-info{
     top: 10%;
@@ -425,8 +425,11 @@ img {
     display: none;
   }
 
+  /* need to add the hamburger menu */
+
   .hero-img{
     height: 270px;
+    width: auto;
   }
   
   .hero-info{
@@ -469,14 +472,16 @@ img {
 
 
 
-@media only screen and (max-width: 440px){
+@media only screen and (max-width: 450px){
+  .navigation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-l{
+    font-size: 16px;
+  }
 
 }
 
-
-
-@media only screen and (max-width: 331px){
-    #hero-title{
-      font-size: 14px;
-    }
-}
