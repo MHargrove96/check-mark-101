@@ -485,3 +485,9 @@ img {
 
 }
 
+@media only screen and (max-width: 416px) {
+  .sticky-header{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

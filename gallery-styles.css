@@ -125,45 +125,69 @@ html {
     color: #0BA39C;
   }
 
-  #about{
-    color: #0BA39C;
+  #gallery{
+      color: #0BA39C;
   }
   
-  .main-content{
-    display: grid;
-    justify-items: center;
-    text-align: center;
-    width: 100%;
-    /* align-items: center; */
-    margin: 0;
-  }
-
   .hero-title{
-     font-size: 35px;
-     padding: 15px 28px 12px;
-     background-color: #252525;
-     color: #ffffff;
-     font-family: 'Poller One', cursive; 
-     text-align: center;
-     margin: 0 auto;
+    height: fit-content;
+    width: fit-content;
+    padding: 23px 27px 20px;
+    margin: 0 auto 20px;
+    background-color: black;
+    color: white;
+    font-size: 35px;
+    font-weight: normal;
+    font-family: 'Poller One', cursive;
+    display: block;;
   }
 
-  .hero-img{
-      max-width: 620px;
-      max-height: 299px;
-      margin-top: 24px;
-      border: 2px solid black;
+  .gal-grid{
+      display: grid;
+      justify-items: center;
+      grid-template-areas: 
+      "c1r1 c2r1 c3r1"
+      "c1r2 c2r2 c3r2"
+      "c1r3 c3r3 c3r3"
+      "footer footer footer";
+      max-width: 960px;
+      height: auto;
+      margin: 0 auto;
   }
 
-  .body-text{
-    max-width: 560px;
-    font-size: 18px;
+  
+  .img-gal{
+      position: relative;
+      height: 100%;
+      width: 100%;
+  }
+
+  .img-gal::after{
+    content: "";
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    opacity: 0;
+    transition: all 1s;  
+  }
+
+  .img-gal:hover:after{
+    opacity: .5;
+  }
+
+  .gal-img{
+    border: 2px solid black;
+    max-width: 100%;
+    height: auto;
   }
 
   .footer{
     background-color: black;
     color: white;
-    width: 100vw;
+    width: 100%;
     height: 122px;
     margin-top: 35px;
     margin-bottom: 40px;
@@ -207,6 +231,7 @@ html {
     width: 44px;
   }
 
+
   @media only screen and (max-width: 610px){
     .navigation{
       display: flex;
@@ -237,6 +262,16 @@ html {
     .discuss{
       display: none;
     }
+
+    .gal-grid{
+      display: grid;
+      grid-template-areas: 
+      "c1r1 c2r1"
+      "c1r2 c2r2"
+      "c1r3 c2r3"
+      "c1r4 c2r4"
+      "c1r5 c2r5";
+    }
   }
 
   @media only screen and (max-width: 555px) {
@@ -253,3 +288,7 @@ html {
       grid-template-columns: 1fr;
     }
   }
+
+
+
+
