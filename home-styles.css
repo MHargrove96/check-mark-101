@@ -113,12 +113,19 @@ img {
   font-weight: bold ;
 }
 
-.page-links:hover{
-  color: #0BA39C;
+.nav-links{
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  font-family: arial black;
+}
+
+.nav-links:hover{
+  color: #0ba39c;
 }
 
 #home{
-  color: #0BA39C;
+  color: #0ba39c;
 }
 
 .featured{  
@@ -131,7 +138,7 @@ img {
 
 .hero-img{
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
 }
 
@@ -425,8 +432,6 @@ img {
     display: none;
   }
 
-  /* need to add the hamburger menu */
-
   .hero-img{
     height: 270px;
     width: auto;
@@ -464,6 +469,18 @@ img {
 
 
 
+@media only screen and (max-width: 555px){
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+
+}
+
+
+
 @media only screen and (max-width: 498px){
   .web-link{
     font-size: 10px;
@@ -478,9 +495,15 @@ img {
     flex-direction: column;
     text-align: center;
   }
+    
+  #hero.title{
+    padding: 8px 10px 4px;
+  }
 
   .hero-l{
     font-size: 16px;
+    margin: 2px;
+    padding: 4px;
   }
 
 }
